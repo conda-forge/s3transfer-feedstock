@@ -11,6 +11,18 @@ Summary: An Amazon S3 Transfer Manager
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/s3transfer-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/s3transfer-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/s3transfer-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/s3transfer-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/s3transfer-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/s3transfer-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/s3transfer/badges/version.svg)](https://anaconda.org/conda-forge/s3transfer)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/s3transfer/badges/downloads.svg)](https://anaconda.org/conda-forge/s3transfer)
+
 Installing s3transfer
 =====================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `s3transfer` available on your pla
 ```
 conda search s3transfer --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/s3transfer-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/s3transfer-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/s3transfer-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/s3transfer-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/s3transfer-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/s3transfer-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/s3transfer/badges/version.svg)](https://anaconda.org/conda-forge/s3transfer)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/s3transfer/badges/downloads.svg)](https://anaconda.org/conda-forge/s3transfer)
 
 
 Updating s3transfer-feedstock
