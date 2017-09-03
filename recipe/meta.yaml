@@ -1,19 +1,21 @@
-{%set name = "s3transfer" %}
-{%set version = "0.1.11" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "76f1f58f4a47e2c8afa135e2c76958806a3abbc42b721d87fd9d11409c75d979" %}
+{% set name = "s3transfer" %}
+{% set version = "0.1.11" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "76f1f58f4a47e2c8afa135e2c76958806a3abbc42b721d87fd9d11409c75d979" %}
+{% set builld = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
@@ -25,7 +27,7 @@ requirements:
   run:
     - python
     - botocore >=1.3.0,<2.0.0
-    - futures >=2.2.0,<4.0.0  # [not py3k]
+    - futures >=2.2.0,<4.0.0  # [py2k]
 
 test:
   imports:
@@ -33,8 +35,11 @@ test:
 
 about:
   home: https://github.com/boto/s3transfer
+  license_file: LICENSE.txt
   license: Apache 2.0
+  license_family: Apache
   summary: 'An Amazon S3 Transfer Manager'
+  dev_url: https://github.com/boto/s3transfer
 
 extra:
   recipe-maintainers:
