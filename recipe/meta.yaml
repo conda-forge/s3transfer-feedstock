@@ -1,8 +1,8 @@
 {% set name = "s3transfer" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "10891b246296e0049071d56c32953af05cea614dca425a601e4c0be35990121e" %}
+{% set hash = "90dc18e028989c609146e241ea153250be451e05ecc0c2832565231dacdf59c1" %}
 {% set build = 0 %}
 
 package:
