@@ -21,7 +21,6 @@ requirements:
   run:
     - python
     - botocore >=1.12.36,<2.0.0
-    - futures >=2.2.0,<4.0.0  # [py2k]
 
 test:
   imports:
