@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - botocore >=1.12.36,<2.0.0
 
 test:
