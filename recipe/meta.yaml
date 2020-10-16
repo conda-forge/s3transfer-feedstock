@@ -9,18 +9,18 @@ source:
   sha256: 921a37e2aefc64145e7b73d50c71bb4f26f46e4c9f414dc648c6245ff92cf7db
 
 build:
-  number: 2
+  noarch: python
+  number: 3
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 
 requirements:
   host:
-    - python
+    - python >=3  # Avoid a py2k selector for the futures dependency
     - pip
   run:
-    - python
+    - python >=3
     - botocore >=1.12.36,<2.0.0
-    - futures >=2.2.0,<4.0.0  # [py2k]
 
 test:
   imports:
