@@ -9,7 +9,7 @@ source:
   sha256: f23d5cb7d862b104401d9021fc82e5fa0e0cf57b7660a1331425aab0c691d021
 
 build:
-  number: 0
+  number: 4
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 
@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python
-    - botocore >=1.12.36,<2.0.0
+    - botocore >=1.12.36,<2.0a.0
     - futures >=2.2.0,<4.0.0  # [py2k]
 
 test:
