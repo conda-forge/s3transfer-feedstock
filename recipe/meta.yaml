@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: s3transfer
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/s3transfer/s3transfer-{{ version }}.tar.gz
-  sha256: 921a37e2aefc64145e7b73d50c71bb4f26f46e4c9f414dc648c6245ff92cf7db
+  sha256: 7fdddb4f22275cf1d32129e21f056337fd2a80b6ccef1664528145b72c49e6d2
 
 build:
   noarch: python
-  number: 5
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
@@ -31,7 +31,7 @@ about:
   license_file: LICENSE.txt
   license: Apache-2.0
   license_family: Apache
-  summary: 'An Amazon S3 Transfer Manager'
+  summary: An Amazon S3 Transfer Manager
   dev_url: https://github.com/boto/s3transfer
 
 extra:
