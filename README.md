@@ -1,11 +1,11 @@
-About s3transfer
-================
+About s3transfer-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/s3transfer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/boto/s3transfer
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/s3transfer-feedstock/blob/main/LICENSE.txt)
 
 Summary: An Amazon S3 Transfer Manager
 
