@@ -5,25 +5,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/s3transfer/s3transfer-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/s3transfer/s3transfer-{{ version }}.tar.gz
   sha256: 29edc09801743c21eb5ecbc617a152df41d3c287f67b615f73e5f750583666a7
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - botocore >=1.33.2,<2.0a.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - s3transfer
 
