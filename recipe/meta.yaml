@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - botocore >=1.33.2,<2.0a.0
+    - botocore >=1.36.0,<2.0a.0
 
 test:
   requires:
