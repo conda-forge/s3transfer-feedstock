@@ -1,4 +1,4 @@
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 
 package:
   name: s3transfer
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/s3transfer/s3transfer-{{ version }}.tar.gz
-  sha256: edae4977e3a122445660c7c114bba949f9d191bae3b34a096f18a1c8c354527a
+  sha256: 559f161658e1cf0a911f45940552c696735f5c74e64362e515f333ebed87d679
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - botocore >=1.36.0,<2.0a.0
+    - botocore >=1.37.4,<2.0a.0
 
 test:
   requires:
