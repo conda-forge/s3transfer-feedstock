@@ -1,4 +1,4 @@
-{% set version = "0.11.5" %}
+{% set version = "0.12.0" %}
 
 package:
   name: s3transfer
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/s3transfer/s3transfer-{{ version }}.tar.gz
-  sha256: 8c8aad92784779ab8688a61aefff3e28e9ebdce43142808eaa3f0b0f402f68b7
+  sha256: 8ac58bc1989a3fdb7c7f3ee0918a66b160d038a147c7b5db1500930a607e9a1c
 
 build:
   noarch: python
