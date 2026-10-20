@@ -9,8 +9,6 @@ Package license: Apache-2.0
 
 Summary: An Amazon S3 Transfer Manager
 
-Development: https://github.com/boto/s3transfer
-
 Current build status
 ====================
 
